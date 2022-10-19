@@ -1,5 +1,5 @@
 fn main() {
-    for _ in "HalloWorld".chars() {
+    for _ in "HelloWorld".chars() {
         println!("Hello world!");
     }
 }
