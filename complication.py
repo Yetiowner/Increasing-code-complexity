@@ -1,3 +1,4 @@
-for i in ("HelloWorld"):
-    print("Hello world!")
+HW = "Hello World!"
+for i in (HW.replace(" ", "").rstrip("!")):
+    print(HW)
 
