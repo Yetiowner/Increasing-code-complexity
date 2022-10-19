@@ -7,3 +7,6 @@ Created simple code that prints "Hello world!" 10 times.
 
 Day 2:
 Replaced the for loop with ```for i in ("HelloWorld"):```
+
+Day 3:
+Replaced the string in for loop to a highly-efficient defined string.
