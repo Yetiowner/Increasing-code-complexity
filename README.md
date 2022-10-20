@@ -8,5 +8,5 @@ Created simple code that prints "Hello world!" 10 times.
 Day 2:
 Replaced the for loop with ```for i in ("HelloWorld"):```
 
-Day 3:
+Day 4:
 Migrate to Rust to fix #6

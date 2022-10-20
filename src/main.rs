@@ -1,5 +1,6 @@
 fn main() {
-    for _ in "HelloWorld".chars() {
-        println!("Hello world!");
+    let hw = "Hello World!";
+    for _ in hw.replace(" ", "").strip_suffix("!").unwrap().chars() {
+        println!("{hw}");
     }
 }
