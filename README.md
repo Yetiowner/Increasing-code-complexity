@@ -18,4 +18,10 @@ Day 4:
 Converted part of code to C for faster runtime
 See https://www.reddit.com/r/ProgrammerHumor/comments/y97azd/see_comments_for_github_repo_that_includes_all/
 
+Day 5:
+Created string builder class
+See https://www.reddit.com/r/ProgrammerHumor/comments/ya1o2w/see_comments_for_github_repo_that_includes_all/
+
 Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/y97azd/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
+
+DO NOT VOTE FOR CHANGES USING ISSUES OR PULL REQUESTS (Except for the rust and unit test pull request, you can stay)
