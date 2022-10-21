@@ -1,14 +1,15 @@
 from io import StringIO
 import sys
+import helloworld
 
 stdout = sys.stdout
 sys.stdout = stringIO = StringIO()
 
-print("HelloWorld")
+print("Hello World!")
 
 sys.stdout = stdout
-helloWorld = stringIO.getvalue().splitlines()[0]
+HW = stringIO.getvalue().splitlines()[0]
 del stringIO
 
-for i in helloWorld:
-    print("Hello world!")
+for i in HW.replace(" ", "").rstrip("!"):
+    helloworld.c_helloworld(HW)
