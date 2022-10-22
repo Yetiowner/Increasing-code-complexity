@@ -1,7 +1,9 @@
 from __future__ import annotations
 from typing import List
 
+from singleton import Singleton
 
+@Singleton
 class HelloWorldBuilder: 
     """
     A class that follows the builder pattern, designed to assemble a hello world string

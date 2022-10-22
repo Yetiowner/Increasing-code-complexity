@@ -22,6 +22,10 @@ Day 5:
 Created string builder class
 See https://www.reddit.com/r/ProgrammerHumor/comments/ya1o2w/see_comments_for_github_repo_that_includes_all/
 
-Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/y97azd/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
+Day 6:
+Converted string builder class to singleton factory
+See https://www.reddit.com/r/ProgrammerHumor/comments/yavooh/see_comments_for_github_repo_that_includes_all/
+
+Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/yavooh/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
 
 DO NOT VOTE FOR CHANGES USING ISSUES OR PULL REQUESTS (Except for the rust and unit test pull request, you can stay)

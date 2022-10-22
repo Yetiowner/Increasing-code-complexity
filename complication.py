@@ -4,7 +4,7 @@ import helloworld_builder
 
 helloworld_chars = ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!']
 
-builder = helloworld_builder.HelloWorldBuilder()
+builder = helloworld_builder.HelloWorldBuilder.instance()
 for c in helloworld_chars:
     builder.add_char(c)
 
