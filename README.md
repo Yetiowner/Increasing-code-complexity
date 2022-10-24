@@ -30,6 +30,10 @@ Day 7:
 Created REST API for getting characters out of binary strings
 See https://www.reddit.com/r/ProgrammerHumor/comments/ybqcsk/see_comments_for_github_repo_that_includes_all/
 
-Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/ybqcsk/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
+Day 8:
+Replaced for loop with recursive function
+See https://www.reddit.com/r/ProgrammerHumor/comments/ycj8x6/see_comments_for_github_repo_that_includes_all/
+
+Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/ycj8x6/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
 
 DO NOT VOTE FOR CHANGES USING ISSUES OR PULL REQUESTS (Except for the rust and unit test pull request, you can stay)
