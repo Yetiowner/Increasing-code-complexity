@@ -34,6 +34,10 @@ Day 8:
 Replaced for loop with recursive function
 See https://www.reddit.com/r/ProgrammerHumor/comments/ycj8x6/see_comments_for_github_repo_that_includes_all/
 
-Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/ycj8x6/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
+Day 9:
+Remade day 7 to be recursive, so the binary strings are taken from the REST API, which are then fed back into it
+See https://www.reddit.com/r/ProgrammerHumor/comments/ydcguq/see_comments_for_github_repo_that_includes_all/
+
+Make sure to go to https://www.reddit.com/r/ProgrammerHumor/comments/ydcguq/see_comments_for_github_repo_that_includes_all/ to vote on the next change!
 
 DO NOT VOTE FOR CHANGES USING ISSUES OR PULL REQUESTS (Except for the rust and unit test pull request, you can stay)
