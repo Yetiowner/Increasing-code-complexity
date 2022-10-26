@@ -12,4 +12,4 @@ jobs:
       with:
         python-version: 3.11
     - name: Run tests
-      run: python -m unittest
+      run: python -m unittest discover -s test -v
