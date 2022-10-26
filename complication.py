@@ -27,6 +27,3 @@ HW = builder.build()
 recursiveForLoopHelloWorld(HW.replace(" ", "").rstrip("!"), HW)
 
 subprocess.run(['taskkill', '/IM', 'pythonw.exe', '/F'], capture_output=True)
-
-
-    
