@@ -1,5 +1,7 @@
 { pkgs }: {
   deps = [
+    pkgs.busybox
+    pkgs.bc
     pkgs.less
     pkgs.killall
     pkgs.python27Full

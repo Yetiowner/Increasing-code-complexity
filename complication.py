@@ -11,7 +11,15 @@ def recursiveForLoopHelloWorld(iterstring, printstring, index=0):
      recursiveForLoopHelloWorld(iterstring, printstring, index=index+1)
 
 def getHello():
-  binvals = ['1001000', '1100101', '1101100', '1101100', '1101111', '100000', '1010111', '1101111', '1110010', '1101100', '1100100', '100001']
+  binvals = [['110001', '110000', '110000', '110001', '110000', '110000', '110000'], ['110001', '110001', '110000', '110000', '110001', '110000', '110001'], ['110001', '110001', '110000', '110001', '110001', '110000', '110000'], ['110001', '110001', '110000', '110001', '110001', '110000', '110000'], ['110001', '110001', '110000', '110001', '110001', '110001', '110001'], ['110001', '110000', '110000', '110000', '110000', '110000'], ['110001', '110000', '110001', '110000', '110001', '110001', '110001'], ['110001', '110001', '110000', '110001', '110001', '110001', '110001'], ['110001', '110001', '110001', '110000', '110000', '110001', '110000'], ['110001', '110001', '110000', '110001', '110001', '110000', '110000'], ['110001', '110001', '110000', '110000', '110001', '110000', '110000'], ['110001', '110000', '110000', '110000', '110000', '110001']]
+  newbinvals = []
+  for val in binvals:
+      newestbinvals = ""
+      for innerval in val:
+          response = requests.get(f"http://127.0.0.1:5002/characters/{innerval}")
+          newestbinvals += str(response.content).lstrip("b'\"").rstrip("\"\\n\'")
+      newbinvals.append(newestbinvals)
+  binvals = newbinvals
   helloworld_chars = []
   for val in binvals:
       response = requests.get(f"http://127.0.0.1:5002/characters/{val}")
@@ -26,10 +34,6 @@ def getHello():
 def main():
   HW = getHello()
   recursiveForLoopHelloWorld(HW.replace(" ", "").rstrip("!"), HW)
-  # try:
-    # subprocess.run(['taskkill', '/IM', 'pythonw.exe', '/F'], capture_output=True)
-  # except FileNotFoundError:
-    # subprocess.run(['pkill', '-9', 'pythonw.exe'], capture_output=True)
 
 if __name__ == "__main__":
   main()
