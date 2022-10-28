@@ -12,18 +12,10 @@ class Case(unittest.TestCase):
     '''
 
     def setUp(self):
-      if hasattr(HelloWorldBuilder, '_instance'): del HelloWorldBuilder._instance
-  
-    @unittest.skip("can't easily be tested due to C port")
-    def test_main(self):
-      '''
-      Check if the output to stdout is correct
-      '''
-      expected = '''Hello world!\nHello world!\nHello world!\nHello world!\nHello world!\nHello world!\nHello world!\nHello world!\nHello world!\nHello world!\n'''
-
-      with patch('sys.stdout', new=StringIO()) as fake_print:
-        complication.main()
-        self.assertEqual(fake_out.getvalue(), expected)
+      if hasattr(HelloWorldBuilder, '_instance'):
+        # Testing caused Hello world! to be printed double
+        # due to HelloWorldBuilder being a singleton
+        del HelloWorldBuilder._instance
 
     @patch("helloworld.c_helloworld")
     def test_main_function(self, mocked):
