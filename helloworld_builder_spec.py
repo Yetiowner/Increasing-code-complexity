@@ -9,3 +9,18 @@ class BuilderTestCase(TestCase):
     self.builder.add_char("foo")
     self.assertListEqual(self.builder._chars, ["f"])
     self.assertEqual(self.builder.build(), "f")
+
+  def test_concats_given_values(self):
+    self.builder.add_char("a")
+    self.builder.add_char("b")
+    self.builder.add_char("c")
+    self.builder.add_char("d")
+    self.builder.add_char("e")
+    self.builder.add_char("f")
+    self.builder.add_char("g")
+
+    self.assertEqual(self.builder.build(), "abcdefg")
+
+  def test_non_string_gives_typeerror(self):
+    with self.assertRaises(TypeError):
+      self.builder.add_char(42)
