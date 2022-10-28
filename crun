@@ -1,4 +1,3 @@
-#echo good
 running () { [ -f restapi.pyw.pid ] && ps p "$(cat restapi.pyw.pid)" >/dev/null; return $?; }
 
 command="$1"

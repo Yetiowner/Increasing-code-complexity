@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.vim
     pkgs.gnupg
     pkgs.less
     pkgs.killall
