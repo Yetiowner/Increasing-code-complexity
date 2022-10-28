@@ -23,10 +23,13 @@ def getHello():
   
   return builder.build()
 
-if __name__ == "__main__":
+def main():
   HW = getHello()
   recursiveForLoopHelloWorld(HW.replace(" ", "").rstrip("!"), HW)
-  try:
-    subprocess.run(['taskkill', '/IM', 'pythonw.exe', '/F'], capture_output=True)
-  except FileNotFoundError:
-    subprocess.run(['pkill', '-9', 'pythonw.exe'], capture_output=True)
+  # try:
+    # subprocess.run(['taskkill', '/IM', 'pythonw.exe', '/F'], capture_output=True)
+  # except FileNotFoundError:
+    # subprocess.run(['pkill', '-9', 'pythonw.exe'], capture_output=True)
+
+if __name__ == "__main__":
+  main()
