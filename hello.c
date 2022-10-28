@@ -5,7 +5,7 @@ static PyObject* c_helloworld(PyObject* self, PyObject* args)
 {
    char *strtoprint;
    PyArg_ParseTuple(args, "s", &strtoprint);
-   printf(strtoprint);
+   printf("%s", strtoprint);
    printf("\n");
    return Py_BuildValue("i", 1);
 }
