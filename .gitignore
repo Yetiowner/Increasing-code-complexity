@@ -1,3 +1,8 @@
 build/
 .vscode/
 __pycache__/
+venv
+restapi.pyw.pid
+restapi.pyw.pid
+repo_setup.sh
+clone_gpg.sh

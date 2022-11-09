@@ -1,0 +1,3 @@
+pkill -9 python
+./crun
+python3 -m unittest -c *_spec.py "$@"
